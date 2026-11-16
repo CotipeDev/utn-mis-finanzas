@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Mis Finanzas: un proyecto educativo para organizar ingresos, gastos y cuotas. Sitio de presentación desarrollado con HTML y CSS.">
+  <meta name="theme-color" content="#09081a">
+  <title>Mis Finanzas | Tu dinero, más claro</title>
+  <link rel="icon" href="recursos/marca-cosmos.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="saltar" href="#contenido">Ir al contenido</a>
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <a class="marca" href="#inicio" aria-label="Mis Finanzas, inicio">
+        <img src="recursos/marca-cosmos.svg" alt="" width="38" height="38">
+        <span class="marca-nombre">
+          <img class="marca-texto" src="recursos/circohub-palabra.svg" alt="CircoHub">
+          <small>Mis Finanzas</small>
+        </span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#funciones">Qué podés organizar</a>
+        <a href="#pasos">Cómo funciona</a>
+        <a href="#vista">Vista previa</a>
+        <a class="nav-destacado" href="#proyecto">El proyecto <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Sección 1: presentación y objetivo de la propuesta. -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="contenedor">
+        <div class="hero-texto">
+          <p class="etiqueta"><span class="punto" aria-hidden="true"></span> UN UNIVERSO DE POSIBILIDADES</p>
+          <h1 id="titulo-inicio">Tu presente, en orden.<br><em>Tu futuro, más cerca.</em></h1>
+          <p class="bajada">Que tus cuentas no sean un misterio. Una propuesta para ordenar lo que cobrás, entender lo
+            que gastás y mirar lo que viene.</p>
+          <div class="acciones">
+            <a class="boton principal" href="#funciones">
+              Conocé la propuesta 
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="enlace-claro" href="#vista">
+              Explorá el diseño 
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <p class="nota-hero">Proyecto educativo · Sin datos financieros reales</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección Funciones -->
+    <section class="seccion" id="funciones" aria-labelledby="titulo-funciones">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <div>
+            <p class="etiqueta">CADA COSA EN SU LUGAR</p>
+            <h2 id="titulo-funciones">Tus cuentas pueden<br>ser más simples.</h2>
+          </div>
+          <p>Una mirada completa, desde el gasto de hoy hasta la última cuota de esa compra.</p>
+        </div>
+        <div class="funciones-flex">
+          <article class="funcion">
+            <span class="icono" aria-hidden="true">01</span>
+            <h3>Organizá tu mes</h3>
+            <p>
+              Reuní ingresos y gastos en una misma vista. Identificá qué está pendiente, qué pagaste y cuánto queda
+              disponible.
+            </p>
+            <span class="detalle">Ingresos · gastos · pagos
+            </span>
+          </article>
+          <article class="funcion">
+            <span class="icono" aria-hidden="true">02</span>
+            <h3>Entendé tus cuotas</h3>
+            <p>
+              Seguí las compras y sus meses de pago. La propuesta distingue una compra puntual de una suscripción que
+              se repite.
+            </p>
+            <span class="detalle">Compras · tarjetas · suscripciones</span>
+          </article>
+          <article class="funcion">
+            <span class="icono" aria-hidden="true">03</span>
+            <h3>Mirá lo que viene</h3>
+            <p>
+              Compará los gastos de los próximos meses y explorá cómo una cuota nueva podría cambiar tu presupuesto.
+            </p>
+            <span class="detalle">Proyección · planificación</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 3: recorrido de uso con una lista ordenada semántica. -->
+    <section class="seccion suave" id="pasos" aria-labelledby="titulo-pasos">
+      <div class="contenedor pasos-flex">
+        <div class="pasos-intro">
+          <p class="etiqueta">UN HÁBITO, PASO A PASO</p>
+          <h2 id="titulo-pasos">Ordenar empieza<br>por lo cotidiano.</h2>
+          <p>
+            No hace falta entender todo de una vez. El recorrido parte de una pregunta concreta: ¿cómo viene mi mes?
+          </p>
+          <a class="enlace" href="#vista">Mirá un ejemplo 
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+        <ol class="pasos-lista">
+          <li>
+            <span class="numero" aria-hidden="true">1</span>
+            <div>
+              <h3>Registrá lo que entra</h3>
+              <p>El sueldo, un ingreso extra o el aguinaldo, en el mes que corresponda.</p>
+            </div>
+          </li>
+          <li>
+            <span class="numero" aria-hidden="true">2</span>
+            <div>
+              <h3>Ubicá tus compromisos</h3>
+              <p>Gastos habituales, cuentas compartidas y cuotas, cada uno con su lugar.</p>
+            </div>
+          </li>
+          <li>
+            <span class="numero" aria-hidden="true">3</span>
+            <div>
+              <h3>Revisá antes de decidir</h3>
+              <p>Consultá pendientes y compará meses antes de asumir un pago nuevo.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Sección 4: maqueta estática; las cifras son ilustrativas. -->
+    <section class="seccion" id="vista" aria-labelledby="titulo-vista">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <div>
+            <p class="etiqueta">DEL DESORDEN AL PANORAMA</p>
+            <h2 id="titulo-vista">La información importante,<br>sin buscarla por todas partes.</h2>
+          </div>
+          <span class="chip">VISTA ILUSTRATIVA</span>
+        </div>
+        <div class="vista-flex">
+          <article class="maqueta" aria-label="Ejemplo de presupuesto mensual, con datos ficticios">
+            <div class="maqueta-cabecera">
+              <span>Tu panorama</span>
+              <span class="mes">Noviembre 2026 <span
+                  aria-hidden="true">⌄</span>
+                </span></div>
+            <h3>Tu mes, más claro.</h3>
+            <div class="resumen-flex">
+              <div>
+                <span>Ingresos</span><strong>$1.800.000</strong></div>
+              <div><span>Gastos totales</span>
+                <strong>$635.000</strong>
+              </div>
+              <div class="disponible">
+                <span>Disponible</span>
+                <strong>$1.165.000</strong>
+              </div>
+            </div>
+            <div class="tabla-scroll">
+              <table>
+                <caption>Ejemplo de seguimiento de pagos</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Concepto</th>
+                    <th scope="col">Importe</th>
+                    <th scope="col">Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Aporte al hogar</th>
+                    <td>$375.000</td>
+                    <td>
+                      <span class="estado pendiente">Pendiente</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Transporte</th>
+                    <td>$50.000</td>
+                    <td>
+                      <span class="estado pagado">Pagado</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Abono de teléfono</th>
+                    <td>$25.000</td>
+                    <td>
+                      <span class="estado pendiente">Pendiente</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="nota-maqueta">Muestra de diseño. La tabla presenta parte de un presupuesto ficticio.</p>
+          </article>
+          <aside class="vista-notas">
+            <h3>Un diseño que acompaña.</h3>
+            <p>
+              Los importes principales tienen más espacio y contraste. Los estados combinan texto y color para
+              facilitar la lectura.
+            </p>
+            <ul>
+              <li>Una jerarquía visual fácil de recorrer.</li>
+              <li>Contenido que se acomoda a tu pantalla.</li>
+              <li>Secciones conectadas por enlaces internos.</li>
+            </ul>
+            <p class="nota">Esta página presenta el proyecto. La maqueta no procesa ni guarda movimientos.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyecto -->
+    <section class="seccion proyecto" id="proyecto" aria-labelledby="titulo-proyecto">
+      <div class="contenedor proyecto-flex">
+        <div class="proyecto-descripcion">
+          <p class="etiqueta">APRENDER CON UN PROBLEMA REAL</p>
+          <h2 id="titulo-proyecto">Una idea que<br>puede seguir creciendo.</h2>
+          <div class="texto-flotante">
+            <img class="recurso-flotante" src="recursos/proyecto-cosmos.svg"
+              alt="Ilustración de un planeta con una órbita y tres estrellas." width="112" height="112">
+            <p>
+              Mis Finanzas nace de la necesidad de entender mejor las cuentas personales. Esta entrega propone un sitio
+              de presentación de una sola página, construido con HTML5 y CSS externo.
+            </p>
+            <p>
+              El objetivo es practicar estructura semántica, navegación interna y maquetación adaptable. La propuesta
+              podrá seguir evolucionando a medida que se incorporen nuevos contenidos durante la cursada.
+            </p>
+          </div>
+        </div>
+        <aside class="ficha-proyecto">
+          <p class="etiqueta">PROYECTO INTEGRADOR · PRIMERA PARTE</p>
+          <h3>Diseño con intención.</h3>
+          <dl>
+            <div>
+              <dt>Tema</dt>
+              <dd>Organización de finanzas personales.</dd>
+            </div>
+            <div>
+              <dt>Tecnologías</dt>
+              <dd>HTML5 y CSS. Sin frameworks.</dd>
+            </div>
+            <div>
+              <dt>Maquetación</dt>
+              <dd>Flexbox, position y float.</dd>
+            </div>
+            <div>
+              <dt>Apoyo de IA</dt>
+              <dd>Paleta, jerarquía visual, estructura y revisión de UX.</dd>
+            </div>
+          </dl>
+          <a class="boton secundario" href="#inicio">
+            Volver al inicio 
+            <span aria-hidden="true">↑</span>
+          </a>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="pie">
+    <div class="contenedor pie-flex">
+      <a class="marca" href="#inicio">
+      <img src="recursos/marca-cosmos.svg" alt=""
+          width="30" height="30">
+          <span class="marca-nombre">
+            <img class="marca-texto" src="recursos/circohub-palabra.svg"
+            alt="CircoHub">
+            <small>Mis Finanzas</small>
+          </span>
+        </a>
+      <p>
+        Proyecto educativo · HTML y CSS · 2026</p>
+        <a href="#proyecto">Sobre esta entrega
+         </a>
+    </div>
+  </footer>
+</body>
+
+</html>

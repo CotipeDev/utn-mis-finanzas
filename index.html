@@ -240,16 +240,18 @@
           <div class="campo">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre"
+                  class="form-control"
                   placeholder="Escribí tu nombre" required>
           </div>
           <div class="campo">
             <label for="correo">Correo electrónico</label>
             <input type="email" id="correo" name="correo"
+                  class="form-control"
                   placeholder="tunombre@ejemplo.com" required>
           </div>
           <div class="campo">
             <label for="motivo">Motivo de consulta</label>
-            <select id="motivo" name="motivo" required>
+            <select id="motivo" name="motivo" class="form-select" required>
               <option value="">Seleccioná una opción</option>
               <option value="funcionalidades">Funcionalidades</option>
               <option value="diseno">Diseño de la propuesta</option>
@@ -267,6 +269,7 @@
               maxlength="500"
               placeholder="Contanos tu consulta o sugerencia..."
               required
+              class="form-control"
             ></textarea>
           </div>          
           <button type="submit" class="boton principal">

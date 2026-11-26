@@ -1,3 +1,12 @@
+
+@font-face {
+  font-family: "Manrope";
+  src: url("recursos/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+}
+
 /* ================================
    ESTILOS GENERALES
    ================================ */
@@ -12,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Manrope", Arial, sans-serif;
   line-height: 1.6;
   color: #f7f3ff;
   background: #0c0916;
@@ -161,6 +170,13 @@ p {
   color: #edd6ff;
   border: 1px solid #5d4770;
   border-radius: 20px;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.barra nav .nav-destacado:hover {
+  background-color: #30203f;
+  transform: translateY(-3px);
+  text-decoration: none;
 }
 
 .nav-destacado span {
@@ -255,6 +271,8 @@ p {
   font-weight: 600;
   text-decoration: none;
   border-radius: 24px;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
 }
 
 .principal {
@@ -264,6 +282,10 @@ p {
 
 .principal:hover {
   background: #efd9ff;
+}
+
+.boton:hover {
+  transform: translateY(-3px);
 }
 
 .enlace-claro {
@@ -684,6 +706,10 @@ tbody th {
 .secundario {
   color: #e6c7f4;
   border: 1px solid #765386;
+}
+
+.secundario:hover {
+  background-color: #30203f;
 }
 
 /* ================================

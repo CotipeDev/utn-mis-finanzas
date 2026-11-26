@@ -664,6 +664,99 @@ tbody th {
 }
 
 /* ================================
+   CONTACTO - FORMULARIO HTML5
+   ================================ */
+
+.contacto {
+  background: #120e20;
+  border-top: 1px solid #30263d;
+  border-bottom: 1px solid #30263d;
+}
+
+#form-contacto {
+  max-width: 650px;
+  margin-top: 35px;
+  padding: 35px;
+  background: #191224;
+  border: 1px solid #4c365f;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(125, 75, 170, 0.15);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font: inherit;
+  color: #f7f3ff;
+  background-color: #261b35;
+  border: 1px solid #5b4770;
+  border-radius: 10px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: 2px solid #d9b7f4;
+  outline-offset: 2px;
+}
+
+
+/* ================================
+   PREGUNTAS FRECUENTES - BOOTSTRAP
+   ================================ */
+
+.preguntas {
+  background: #0c0916;
+}
+
+.preguntas .accordion {
+  max-width: 800px;
+  margin-top: 35px;
+}
+
+.preguntas .accordion-item {
+  color: #f7f3ff;
+  background: #191224;
+  border: 1px solid #4c365f;
+}
+
+.preguntas .accordion-button {
+  color: #f7f3ff;
+  background: #191224;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.preguntas .accordion-button:not(.collapsed) {
+  color: #e6b7fa;
+  background: #261b35;
+  box-shadow: none;
+}
+
+.preguntas .accordion-button:focus-visible {
+  box-shadow: 0 0 0 3px #d9b7f4;
+}
+
+.preguntas .accordion-body {
+  color: #c8bdd8;
+  line-height: 1.8;
+}
+
+.preguntas .accordion-button::after {
+  filter: invert(1);
+}
+
+
+/* ================================
    PROYECTO - FLEXBOX + FLOAT
    ================================ */
 .proyecto {

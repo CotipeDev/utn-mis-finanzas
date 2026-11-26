@@ -10,6 +10,7 @@
   <title>Mis Finanzas | Tu dinero, más claro</title>
   <link rel="icon" href="recursos/marca-cosmos.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -229,6 +230,158 @@
       </div>
     </section>
 
+    <!-- Sección Contacto -->
+    <section class="seccion contacto" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="contenedor">
+        <p class="etiqueta">ESTAMOS PARA ESCUCHARTE</p>
+        <h2 id="titulo-contacto">Hablemos de Mis Finanzas.</h2>
+        <p>¿Tenés alguna consulta sobre esta propuesta? Dejanos tu mensaje.</p>
+        <form id="form-contacto">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"
+                  placeholder="Escribí tu nombre" required>
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo"
+                  placeholder="tunombre@ejemplo.com" required>
+          </div>
+          <div class="campo">
+            <label for="motivo">Motivo de consulta</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">Seleccioná una opción</option>
+              <option value="funcionalidades">Funcionalidades</option>
+              <option value="diseno">Diseño de la propuesta</option>
+              <option value="sugerencias">Sugerencias de mejora</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              minlength="10"
+              maxlength="500"
+              placeholder="Contanos tu consulta o sugerencia..."
+              required
+            ></textarea>
+          </div>          
+          <button type="submit" class="boton principal">
+            Enviar consulta
+            <i class="bi bi-send" aria-hidden="true"></i>
+          </button>
+
+
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- Sección Preguntas frecuentes -->
+    <section class="seccion preguntas" id="preguntas" aria-labelledby="titulo-preguntas">
+      <div class="contenedor">
+        <p class="etiqueta">RESOLVEMOS TUS DUDAS</p>
+        <h2 id="titulo-preguntas">Preguntas frecuentes.</h2>
+        <p>Conocé un poco más sobre la propuesta de Mis Finanzas.</p>
+
+      <div class="accordion" id="acordeonPreguntas">
+        <!-- Pregunta 1 -->        
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#respuestaUno"
+              aria-expanded="false"
+              aria-controls="respuestaUno">
+              ¿Qué es Mis Finanzas?
+            </button>
+          </h3>
+
+          <div id="respuestaUno" class="accordion-collapse collapse"
+            data-bs-parent="#acordeonPreguntas">
+            <div class="accordion-body">
+              Mis Finanzas es una propuesta educativa para visualizar
+              ingresos, gastos y cuotas de manera clara y organizada.
+            </div>
+          </div>
+        </div>
+        <!-- Pregunta 2 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#respuestaDos"
+              aria-expanded="false"
+              aria-controls="respuestaDos">
+              ¿Qué información permite organizar?
+            </button>
+          </h3>
+
+          <div id="respuestaDos" class="accordion-collapse collapse"
+            data-bs-parent="#acordeonPreguntas">
+            <div class="accordion-body">
+              La propuesta contempla ingresos, gastos mensuales,
+              compras en cuotas y proyecciones para planificar
+              futuros compromisos financieros.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#respuestaTres"
+              aria-expanded="false"
+              aria-controls="respuestaTres">
+              ¿Mis Finanzas ya es una aplicación funcional?
+            </button>
+          </h3>
+
+          <div id="respuestaTres" class="accordion-collapse collapse"
+            data-bs-parent="#acordeonPreguntas">
+            <div class="accordion-body">
+              Todavía no. Actualmente es un proyecto educativo
+              de presentación que muestra cómo podría funcionar
+              una herramienta de organización financiera.
+              Los datos son ficticios y no se almacenan movimientos.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#respuestaCuatro"
+              aria-expanded="false"
+              aria-controls="respuestaCuatro">
+              ¿Se puede utilizar desde el celular?
+            </button>
+          </h3>
+
+          <div id="respuestaCuatro" class="accordion-collapse collapse"
+            data-bs-parent="#acordeonPreguntas">
+            <div class="accordion-body">
+              Sí. El sitio utiliza diseño responsive para adaptar
+              sus contenidos a computadoras, tablets y celulares.
+              La propuesta fue desarrollada con HTML5, CSS3 y Bootstrap.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+
+
     <!-- Sección Proyecto -->
     <section class="seccion proyecto" id="proyecto" aria-labelledby="titulo-proyecto">
       <div class="contenedor proyecto-flex">
@@ -294,6 +447,9 @@
          </a>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

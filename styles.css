@@ -340,6 +340,7 @@ p {
   background: #171225;
   border: 1px solid #3b2d4d;
   border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(125, 75, 170, 0.22);
 }
 
 .funcion h3 {

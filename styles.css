@@ -325,14 +325,7 @@ p {
   color: #b6abc9;
 }
 
-.funciones-flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
 .funcion {
-  flex: 1 1 250px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -675,7 +668,7 @@ tbody th {
 
 #form-contacto {
   max-width: 650px;
-  margin-top: 35px;
+  margin: 35px auto 0;
   padding: 35px;
   background: #191224;
   border: 1px solid #4c365f;
@@ -734,7 +727,7 @@ tbody th {
 
 .preguntas .accordion {
   max-width: 800px;
-  margin-top: 35px;
+  margin: 35px auto 0;
 }
 
 .preguntas .accordion-item {
@@ -992,15 +985,6 @@ tbody th {
 
   .encabezado-seccion .chip {
     margin-top: 20px;
-  }
-
-  .funciones-flex {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .funcion {
-    flex-basis: auto;
   }
 
   .pasos-flex,

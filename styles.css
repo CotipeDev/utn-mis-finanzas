@@ -636,6 +636,34 @@ tbody th {
 }
 
 /* ================================
+   VIDEO - MULTIMEDIA HTML5
+   ================================ */
+
+.video-seccion {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.video-seccion h3 {
+  margin-bottom: 12px;
+}
+
+.video-seccion p {
+  margin-bottom: 30px;
+  color: #b6abc9;
+}
+
+.video-seccion video {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #4c365f;
+}
+
+/* ================================
    PROYECTO - FLEXBOX + FLOAT
    ================================ */
 .proyecto {
